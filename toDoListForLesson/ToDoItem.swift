@@ -13,6 +13,7 @@ class ToDoItem: ObservableObject, Identifiable {
     
     @Published var title = ""
     @Published var isImportant = false
+    @Published var isComplete = false
     
     init(title: String, isImportant: Bool = false) {
         self.title = title
